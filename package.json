@@ -1,6 +1,6 @@
 {
   "name": "bark-it",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "type": "module",
   "author": "Viki <hi@viki.moe> (https://github.com/vikiboss)",
   "description": "Bark SDK for TypeScript，无需服务端，直连 Apple 推送服务。",
