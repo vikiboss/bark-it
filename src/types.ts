@@ -258,6 +258,4 @@ export interface PushResult {
   message: string
   /** 对应的 token */
   deviceToken: string
-  /** 响应数据，成功时包含服务器返回的数据，失败时通常不包含此字段 */
-  data: any | null
 }

@@ -148,7 +148,6 @@ export class Bark {
             status: -1,
             message: err instanceof Error ? err.message : String(err),
             deviceToken: token,
-            data: null,
           }
         } finally {
           s.release()
@@ -176,7 +175,7 @@ export class Bark {
       headers: {
         'apns-topic': TOPIC,
         'apns-push-type': 'alert',
-        authorization: `bearer ${token}`,
+        authorization: `Bearer ${token}`,
         'content-type': 'application/json',
       },
       body: JSON.stringify(payload),
@@ -185,9 +184,8 @@ export class Bark {
     return {
       success: res.ok,
       status: res.status,
-      message: res.statusText,
+      message: res.statusText || 'ok',
       deviceToken,
-      data: await res.json().catch(() => null),
     }
   }
 
