@@ -13,6 +13,10 @@
     "build": "tsdown",
     "test": "node ./test/index.ts"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "devDependencies": {
     "@types/node": "^25.8.0",
     "tsdown": "^0.22.0",
