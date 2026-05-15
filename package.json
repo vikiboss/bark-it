@@ -24,14 +24,17 @@
   "scripts": {
     "dev": "tsdown --watch",
     "build": "tsdown",
-    "test": "node ./test/index.ts"
+    "test": "node ./test/index.ts",
+    "release": "bumpp"
   },
   "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
     "access": "public",
-    "registry": "https://registry.npmjs.org/"
+    "provenance": true
   },
   "devDependencies": {
     "@types/node": "^25.8.0",
+    "bumpp": "^11.1.0",
     "tsdown": "^0.22.0",
     "typescript": "^6.0.3"
   }
