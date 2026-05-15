@@ -1,8 +1,21 @@
 {
   "name": "bark-it",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "author": "Viki <hi@viki.moe> (https://github.com/vikiboss)",
+  "description": "Bark SDK for TypeScript，无需服务端，直连 Apple 推送服务。",
+  "keywords": [
+    "bark",
+    "sdk",
+    "typescript"
+  ],
+  "homepage": "https://github.com/vikiboss/bark-it",
+  "repository": {
+    "url": "https://github.com/vikiboss/bark-it"
+  },
+  "bugs": {
+    "url": "https://github.com/vikiboss/bark-it"
+  },
   "license": "MIT",
   "packageManager": "pnpm@10.31.0",
   "files": [
