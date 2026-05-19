@@ -16,6 +16,9 @@
   "bugs": {
     "url": "https://github.com/vikiboss/bark-it"
   },
+  "main": "./dist/index.mjs",
+  "exports": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
   "license": "MIT",
   "packageManager": "pnpm@10.31.0",
   "files": [
